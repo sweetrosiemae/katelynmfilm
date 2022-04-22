@@ -1,0 +1,111 @@
+.letsHang {
+    display: flex;
+    padding-bottom: 8rem;
+
+    .rosieContainer{
+        width: 70%;
+        padding-right: 3rem;
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    p {
+        padding-top: 3rem;
+        letter-spacing: 1.5px;;
+        line-height: 3rem;
+        text-align: justify;
+    }
+
+
+
+    ul {
+        display: flex;
+
+        li {
+            padding-top: 3rem;
+            margin: 0;
+            width: 8%;
+            img {
+                width: 100%;
+            }
+            img:hover {
+                transition: all .2s ease-in-out;
+                transform: scale(1.5);
+            }
+        }
+    }
+}
+
+
+.formSection {
+
+    h2 {
+        border-bottom: 2px solid $litPurple;
+        padding: 2rem;
+        padding-top: 20rem;
+        text-align: center;
+        width: 19rem;
+        margin-bottom: 10rem;
+    }
+}
+
+form {
+    fieldset {
+        border: none;
+    }
+
+    label {
+        color: $white;
+        font-family: $mainFont;
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        margin: 2rem 0;
+        padding: 2rem;
+        border: none;
+        border-bottom: 1px solid $litPurple;
+        width: 100%;
+        background-color: $background;
+        color: $white;
+        font-family: $mainFont;
+        font-size: 2.5rem;
+    }
+
+    input[type=text]:focus,
+    input[type=email]:focus,
+    textarea:focus {
+        box-shadow: 10px 5px 10px $teal;
+    }
+
+    .inputContainer {
+        padding: 3rem;
+    }
+
+    button {
+        margin-top: 1rem;
+        padding: 1rem;
+        border: 2px solid $litPurple;
+        font-size: 2rem;
+        font-family: $mainFont;
+        text-transform: uppercase;
+        background-color: $background;
+        color: $white;
+
+    }
+    
+    button:hover,
+    button:focus {
+        border: 2px solid $teal;
+        color: $teal;
+        text-shadow: 0 0 0.6rem $teal, 0 0 0.5rem $teal, -0.2rem 0.1rem 1rem $teal, 0.2rem 0.1rem 1rem $teal, 0 -0.5rem 2rem $teal, 0 0.5rem 3rem $teal;
+    }
+}
+
+
+

@@ -1,0 +1,298 @@
+//LAPTOP MEDIA QUERY
+.rosieQuote {
+    @include laptop {
+        .bottomQuote{
+            position: absolute;
+            left: 92%;
+            top: 20rem;
+        }
+    }
+}
+
+.completedWork .appPicContainer .diaryPic {
+    @include laptop {
+        left: 161%;
+    }
+}
+
+.completedWork .appPicContainer .flavourPic {
+    @include laptop {
+        left: -10%;
+    }
+}
+
+.completedWork .appPicContainer .sunRunPic {
+    @include laptop {
+        left: 200%; 
+    }
+}
+
+//iPRO MEDIA QUERY
+
+.completedWork .appPicContainer .diaryPic {
+    @include iPro {
+        top: 210px;
+    }
+}
+
+.completedWork .appPicContainer .flavourPic {
+    @include iPro {
+        top: 325px;
+    }
+}
+
+.completedWork .appPicContainer .sunRunPic {
+    @include iPro {
+        top: 190px; 
+    }
+}
+
+
+//TABLET MEDIA QUERY
+.wrapper {
+    @include tablet {
+        width: 100%;
+    }
+}
+
+header .titleContainer {
+    @include tablet {
+        height: 80vh;
+    }
+}
+
+
+.completedWork .appPicContainer .diaryPic {
+    @include iPro {
+        top: 260px;
+    }
+}
+
+.completedWork .appPicContainer .flavourPic {
+    @include iPro {
+        top: 355px;
+    }
+}
+
+.completedWork .appPicContainer .sunRunPic {
+    @include iPro {
+        top: 210px; 
+    }
+}
+
+.letsHang {
+    @include iPro {
+        display: block;
+    }
+}
+
+
+//TABMINI MEDIA QUERIES
+
+.showHamMenu {
+    @include tabMini {
+        text-align: center;
+        margin-top: 3rem;
+        margin-right: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: $background;
+    }
+}
+
+
+.rosieQuote {
+    @include tabMini {
+        .bottomQuote{
+            top: 24rem;
+        }
+    }
+}
+
+.appInfo {
+    @include tabMini {
+        padding-top: 1.5rem;
+    }
+}
+
+.completedWork .appPicContainer {
+    @include tabMini {
+        width: 100%;
+        margin: 0 auto;
+        position: initial;
+        top: initial;
+        left: inital;
+        padding-bottom: 3rem;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.completedWork .appPicContainer .diaryPic {
+    @include tabMini {
+        top: initial;
+        left: inital;
+        position: initial;
+    }
+}
+
+.completedWork .appPicContainer .flavourPic {
+    @include tabMini {
+        top: initial;
+        left: inital;
+        position: initial;
+    }
+}
+
+.completedWork .appPicContainer .sunRunPic {
+    @include tabMini {
+        top: initial;
+        left: inital;
+        position: initial;
+        width: 40%;
+        margin-left: 18rem;
+    }
+}
+
+.appInfo .flavourDetails {
+    @include tabMini {
+        text-align: left;
+    }
+}
+
+.appInfo .flavourDetails .skillsList {
+    @include tabMini {
+        justify-content: initial;
+    }
+}
+
+
+//INBETWEEN SIZE 
+
+
+.rosieQuote {
+    @media only screen and (max-width:610px) {
+        .bottomQuote {
+            top: 29rem;
+        }
+    }
+}
+
+.iconContainer {
+    @media only screen and (max-width:500px) {
+        padding-top: 6rem;
+    }
+}
+
+.rosieQuote {
+    @media only screen and (max-width:500px) {
+        .bottomQuote {
+            top: 30rem;
+        }
+        p {
+            margin: 1rem 4rem;
+        }
+    }
+}
+
+.skillsSection ul li {
+    @media only screen and (max-width:500px) {
+        margin: 0 auto;
+        padding: 1rem 2rem;
+    }
+}
+
+.completedWork h2 {
+    @media only screen and (max-width:500px) {
+        padding: 5rem 1.5rem;
+    }
+}
+
+.appInfo p {
+        @media only screen and (max-width:500px) {
+            text-align: left;
+        }
+}
+
+
+.completedWork .appPicContainer .sunRunPic  {
+    @media only screen and (max-width:500px) {
+        margin-left: 14rem;
+    }
+}
+
+.formSection h2 {
+    @media only screen and (max-width:500px) {
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+
+//PHONE MEDIA QUERIES
+
+header .titleContainer {
+    @include phone {
+        height: 70vh;
+    }
+}
+
+.typeWriterContainer {
+    @include phone {
+        margin: 1rem auto;
+    }
+}
+
+.introSection .typeWriterContainer {
+    @include phone {
+        margin-top: 3rem;
+        width: 30rem;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+.rosieQuote {
+    @include phone {
+        .bottomQuote {
+            top: 38rem;
+            left: 85%;
+        }
+    }
+}
+
+.completedWork h2 {
+    @include phone {
+        padding-bottom: 2rem;
+    }
+}
+
+.appInfo .appDetails .skillsList {
+    @include phone {
+        display: block;
+    }
+}
+
+.completedWork .appPicContainer .sunRunPic  {
+    @include phone {
+        margin-left: 10rem;
+    }
+}
+
+//EVEN SMALLER
+
+.rosieQuote {
+    @media only screen and (max-width:380px) {
+        .bottomQuote {
+            top: 40rem;
+        }
+    }
+}
+
+.introSection .typeWriterContainer .typing {
+    @media only screen and (max-width:380px) {
+        letter-spacing: initial;
+    }
+}

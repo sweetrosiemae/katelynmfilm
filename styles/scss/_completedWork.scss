@@ -1,0 +1,118 @@
+.completedWork {
+
+    h2 {
+        border-bottom: 2px solid $litPurple;
+        padding: 20rem 1.5rem 2rem 1.5rem;
+        text-align: center;
+        width: 18rem;
+    }
+    .appPicContainer{
+        width: 40%;
+        margin: 0;
+        position: absolute;
+
+        .diaryPic,
+        .flavourPic,
+        .sunRunPic {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            padding-top: 0;
+            position: relative;
+        }
+
+        .diaryPic {
+            max-width: 100%;
+            top: 180px;
+            left: 170%;
+        }
+
+        .flavourPic {
+            max-width: 100%;
+            top: 300px;
+            left: -20%;
+        }
+
+        .sunRunPic {
+            max-width: 55%;
+            top: 170px;
+            left: 210%;;
+        }
+
+        .diaryPic:hover,
+        .diaryPic:focus,
+        .flavourPic:hover,
+        .flavourPic:focus,
+        .sunRunPic:hover,
+        .sunRunPic:focus {
+            -webkit-filter: none;
+            filter: none;
+            animation: shake 0.5s 1;
+        }
+    }
+
+}
+
+.appInfo {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    h3 {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        padding-bottom: 3rem;
+        letter-spacing: 1.5px;;
+        line-height: 3rem;
+        text-align: justify;
+    }
+
+    .appDetails {
+        border: solid 2px $litPurple;
+        padding: 4.5rem;
+        width: 100%;
+
+        .skillsList {
+            display: flex;
+
+            li{
+                margin: 0;
+                padding-right: 2rem;
+                a {
+                    padding: 0 1rem;
+                    position: relative;
+                    text-transform: uppercase;
+                    top: -15px;
+                }
+                img{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .flavourDetails {
+        text-align: right;
+
+        .skillsList {
+            justify-content: flex-end;
+            .webIcon{
+                padding-right: 0;
+            }
+        }
+    }
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+

@@ -1,0 +1,95 @@
+// INTRO SECTION
+
+.introSection {
+    position: relative;
+
+    .typeWriterContainer {
+        width: 42rem;
+        margin: 20rem auto;
+        margin-bottom: 5rem;
+        
+        .typing {
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+            border-right: .2rem solid $litPurple;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: .25rem;
+            animation: typing 6.5s steps(60) normal both, 
+                        blinker .75s steps(60) infinite normal;
+        }
+    }
+
+
+    @keyframes typing {
+        from { width: 0}
+        to {width: 100%}
+    }
+
+    @keyframes blinker {
+        from {border-color: transparent}
+        to {border-color: transparent}
+        50% { border-color: $litPurple}
+    }
+
+}
+
+.rosieQuote {
+    p {
+        margin: 1rem 8.5rem;
+        letter-spacing: 1.5px;;
+        line-height: 3rem;
+        text-align: justify;
+    }
+
+    .topQuote{
+        position: relative;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    .bottomQuote{
+        position: relative;
+        left: 98rem;
+        top: -1rem;
+    }
+}
+
+// SKILLS SECTION
+
+.skillsSection {
+    h2 {
+        border-bottom: 2px solid $litPurple;
+        padding: 2rem;
+        padding-top: 20rem;
+        text-align: center;
+        width: 15rem;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 3rem;
+
+        li {
+            padding: 2rem 7rem;
+            img {
+                margin: 0 auto;
+                padding: 3rem;
+                padding-bottom: 1rem;
+            }
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+    .gradientTitles {
+        background: linear-gradient($teal, $litPurple);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+}
