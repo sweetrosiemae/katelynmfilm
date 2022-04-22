@@ -1468,6 +1468,18 @@ form button:focus {
   .appInfo p {
     text-align: left;
   }
+
+  .introSection .typeWriterContainer {
+    width: 98%;
+  }
+
+  .introSection .typeWriterContainer .typing {
+    animation: unset;
+    white-space: unset;
+    width: 95%;
+    border: 0;
+  }
+
 }
 
 
