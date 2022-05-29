@@ -453,18 +453,18 @@ i {
 }
 
 .blob.red {
-  margin-left: 1000px;
+  margin-left: 985px;
   background: rgba(255, 51, 106, 1);
   box-shadow: 0 0 0 0 rgba(255, 51, 106, 1);
   animation: pulse-red 2s infinite;
 }
 
 .filmframe{
-  height: 33vh;
-  width: 55%;
+  height: 40vh;
+  width: 58%;
   position: absolute;
   z-index: 10;
-  left: 18%;
+  left: 16%;
   margin-left: 6%;
 
   background:
